@@ -1,0 +1,57 @@
+:root {
+    --DarkRed:#860202;
+    --PersianIndigo:#340B61;
+    --Gold:#D4901C;
+}
+
+/*TODO 
+    fix img position (more up)
+    Add spacing
+    Add Background
+    Create Graph
+    Add About Us Text
+    Fix flexboxalignment
+*/
+
+header img {
+    position: relative;
+    z-index: -1;
+    width: 101%;
+    margin-left: -7px;
+}
+
+nav {
+    display: flex;
+    /* sticky is similar to fixed, but only applies before it goes of screen */
+    position: sticky;
+    margin-top:-500px;
+    margin-left: -7px;
+    width: 101%;
+    
+}
+
+
+
+.DarkRedBackground{
+    background-color: var(--DarkRed);
+}
+
+.DarkRed {
+    color:var(--DarkRed);
+}
+
+.GoldBackground{
+    background-color: var(--Gold);
+}
+
+.Gold{
+    color:var(--Gold);
+}
+
+.PersianIndigo{
+    color:var(--PersianIndigo);
+}
+
+.PersianIndigoBackground{
+    background-color:var(--PersianIndigo)
+}
