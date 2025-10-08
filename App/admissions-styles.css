@@ -23,7 +23,7 @@ body header {
     top: 0;
     width: 100%;
     margin: 0;
-    height: 65px;
+    height: 8vh;
 }
 
 header nav {
@@ -44,19 +44,15 @@ nav div {
 
 /*--------------------Left Nav--------------------*/
 nav .Left {
-    /*border: 1px dashed black;*/
     margin: 0;
     padding: 0;
-    justify-content: center;
+    text-align: center;
     width: 12.5%;
 }
 
 .Left p {
     margin: 0;
-    justify-content: center;
-    align-self: center;
     height: 100%;
-    border: 1px solid cyan;
 }
 
 
@@ -67,16 +63,19 @@ nav .Right {
     display: flex;
     flex-direction: row;
     justify-content: right;
-    gap: 45px;
+    gap: 40px;
     padding-right: 30px;
     width: 37.5%;
+    flex-wrap: nowrap;
 }
 
 .Right p {
     color: white;
     /*font-weight: 700;*/
     margin: 1px 5px;
-    font-size: 28px;
+    padding: 5px 10px;
+    font-size: 25px;
+    white-space: nowrap; /*Prevents text itself from wrapping*/
 }
 
 .GoldHover:hover{
@@ -101,13 +100,15 @@ nav .Right {
 .mainContent {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: 100px;
+    margin: 50px 100px;
     gap: 100px;
+    
     
 }
 
 .mainContent > div {
     background-color: var(--Gold);
+    box-shadow: 1px 1px 10px var(--PersianIndigo), -1px -1px 10px var(--PersianIndigo);
 }
 
 .Card {
@@ -118,7 +119,20 @@ nav .Right {
 .Card p {
     border: 1px dashed black;
     margin: 10px;
-    align-self: center;
+    align-self: stretch;
+    text-align: center;
+    font-size: 1em;
+    flex: 1;
+}
+
+#cardTitle {
+    font-size: 32px;
+    font-weight: 500;
+    border: 1px dashed cyan;
+    /*
+    align-self: stretch;
+    text-align: center;
+    */
 }
 
 
@@ -130,7 +144,7 @@ nav .Right {
 }
 
 .Footer p {
-    justify-content: center;
+    text-align: center;
     padding: 0 10px;
 }
 
