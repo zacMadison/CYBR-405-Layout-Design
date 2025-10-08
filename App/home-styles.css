@@ -5,32 +5,122 @@
 }
 
 /*TODO 
-    fix img position (more up)
-    Add spacing
-    Add Background
+    Create Flavor Text
     Create Graph
-    Add About Us Text
-    Fix flexboxalignment
+    Improve Styling
 */
 
+
+/* Generic Elements */
 header img {
     position: relative;
-    z-index: -1;
-    width: 101%;
-    margin-left: -7px;
-}
-
-nav {
-    display: flex;
-    /* sticky is similar to fixed, but only applies before it goes of screen */
-    position: sticky;
-    margin-top:-500px;
-    margin-left: -7px;
-    width: 101%;
+    width: 70%;
+    z-index:1;
     
 }
 
+body{
+    display:flex;
+    flex-direction: column;
+}
 
+h1{
+    padding:10px;
+}
+
+nav p{
+    color:white;
+}
+
+footer{
+    margin-bottom:0;
+}
+
+/* This centers the image, places it on a negative zindex, and adds a background */
+.img-centered{
+    display:flex;
+    justify-content: center;
+    z-index:0;
+    background-color: black;
+    margin-left: -7px;
+    margin-top: -10%;
+    margin-bottom: -15%;
+}
+
+nav {
+    /* sticky is similar to fixed, but only applies before it goes of screen */
+    position: sticky;
+    top:0;
+    margin-left: -7px;
+    left:0;
+    z-index: 4;
+   
+}
+
+/* Specific Classes */
+.Logo{
+    font-size:25px;
+}
+
+.nav-button {
+    font-size:25px;
+    padding-left:2%;
+    padding-right:2%
+}
+
+.body{
+    position:relative;
+    z-index:3;
+    margin-left:-7px;
+    width:auto;
+    padding-bottom: 40px;
+    /* This is to deal with and issue that caused the body to not go far enough up to cover the image, not sure why the spacing is odd
+    but this bandaid fix works for now */
+    margin-top:-1.4%;
+    clear:both;
+
+    flex-grow:1;
+}
+
+.AboutUs{
+    margin-top: 5%;
+    position: relative;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.Statistics{
+    margin-top: 5%;
+}
+
+
+/* Generic Classes */
+
+.Centered{
+    text-align: center;
+}
+
+.flex-between{
+    display:flex;
+    justify-content: center;
+    gap: 20%
+}
+
+.flex-left{
+    display:flex;
+    justify-content: left;
+    float:left;
+}
+
+.flex-right{
+    display:flex;
+    justify-content: right;
+}
+
+.GoldHover:hover{
+    background-color: var(--Gold);
+    color: var(--PersianIndigo) ;
+}
 
 .DarkRedBackground{
     background-color: var(--DarkRed);
@@ -54,4 +144,9 @@ nav {
 
 .PersianIndigoBackground{
     background-color:var(--PersianIndigo)
+}
+
+.WhiteBackground{
+    background-color: white;
+
 }
