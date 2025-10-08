@@ -29,8 +29,8 @@ body header {
 header nav {
     display: flex;
     flex-direction: row;
-    height: 100%;
-    /*border: 3px dashed red;*/
+    height: 95%;
+    border-bottom: 4px solid var(--Gold);
     justify-content: space-between;
 }
 
@@ -135,6 +135,10 @@ nav .Right {
     */
 }
 
+.Buttons {
+    display: flex;
+    flex-basis: 1;
+}
 
 
 /*--------------------Footer--------------------*/
