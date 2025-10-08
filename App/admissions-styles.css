@@ -1,0 +1,125 @@
+:root {
+    --DarkRed:#860202;
+    --PersianIndigo:#340B61;
+    --Gold:#D4901C;
+}
+
+body {
+    margin: 5px;
+}
+
+.mainGrid {
+    display: grid;
+    grid-template-rows: 1fr 120vh .5fr;
+}
+.secondaryGrid {
+    display: grid;
+    grid-template-columns: 1fr 6fr 1fr;
+}
+
+/*--------------------Nav Bar--------------------*/
+body header {
+    /* sticky is similar to fixed, but only applies before it goes off screen */
+    position: sticky;
+    top: 0;
+    width: 100%;
+    margin: 0;
+    height: 65px;
+}
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    /*border: 3px dashed red;*/
+    justify-content: stretch;
+    gap: 55%;
+    
+}
+
+nav div {
+    border: 2px dashed black;
+    padding: 1px;
+    align-items: center;
+}
+
+
+
+/*--------------------Left Nav--------------------*/
+nav .Left {
+    /*border: 1px dashed black;*/
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    width: 12.5%;
+}
+
+.Left p {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+/*--------------------Right Nav--------------------*/
+nav .Right {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    padding-right: 15px;
+}
+
+.Right p {
+    color: white;
+    font-weight: 700;
+    margin: 1px 5px;
+    font-size: 28px;
+}
+
+
+
+.Margin {
+    background-color: var(--PersianIndigo);
+}
+
+
+
+
+/*--------------------Footer--------------------*/
+.Footer {
+    background-color: var(--PersianIndigo);
+    color: white;
+    border: 1px solid magenta;
+}
+.Footer p {
+    border: 1px solid cyan;
+    justify-content: center;
+}
+
+
+
+.DarkRedBackground{
+    background-color: var(--DarkRed);
+}
+
+.DarkRed {
+    color:var(--DarkRed);
+}
+
+.GoldBackground {
+    background-color: var(--Gold);
+}
+
+.Gold {
+    color:var(--Gold);
+}
+
+.PersianIndigo {
+    color:var(--PersianIndigo);
+}
+ 
+.PersianIndigoBackground {
+    background-color:var(--PersianIndigo);
+}
