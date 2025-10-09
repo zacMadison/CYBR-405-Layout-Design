@@ -12,7 +12,8 @@ body {
 
 .mainGrid {
     display: grid;
-    grid-template-rows: 1fr 120vh .5fr;
+    grid-template-rows: 1fr 1200px .5fr;
+    flex-wrap: nowrap;
 }
 
 
@@ -50,9 +51,9 @@ nav .Left {
     width: 12.5%;
 }
 
-.Left p {
-    margin: 0;
+.Left img {
     height: 100%;
+    width: auto;
 }
 
 
@@ -95,6 +96,7 @@ nav .Right {
 .secondaryGrid {
     display: grid;
     grid-template-columns: 1fr 6fr 1fr;
+    height: 1200px;
 }
 
 .mainContent {
@@ -109,6 +111,7 @@ nav .Right {
 .mainContent > div {
     background-color: var(--Gold);
     box-shadow: 1px 1px 10px var(--PersianIndigo), -1px -1px 10px var(--PersianIndigo);
+    border-radius: 0 0 10px 10px;
 }
 
 .Card {
@@ -127,17 +130,43 @@ nav .Right {
 
 #cardTitle {
     font-size: 32px;
-    font-weight: 500;
-    border: 1px dashed cyan;
-    /*
-    align-self: stretch;
-    text-align: center;
-    */
+    font-weight: 800;
+    margin: 0;
+    text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
 }
 
+#cardDescr {
+    text-align: left;
+}
+
+.Card img {
+    width: 100%;
+    min-height: 140px;
+    
+}
+
+
+/*--------------------Buttons--------------------*/
 .Buttons {
     display: flex;
     flex-basis: 1;
+    justify-content: space-around;
+}
+
+input[type="submit"] {
+    background-color: white;
+    border: 2px solid #cdcdcd;
+    border-radius: 3px;
+    padding: 10px 70px;
+    font-size: 18px;
+    font-family: 'Times New Roman';
+    font-weight: 500;
+    margin: 10px 0;
+}
+input[type="submit"]:hover {
+    background-color: #dddddd;
+    color: var(--PersianIndigo);
+    border: 2px solid white;
 }
 
 
