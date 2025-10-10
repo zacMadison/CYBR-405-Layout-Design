@@ -1,3 +1,5 @@
+/* Written By Zach */
+
 :root {
     --DarkRed:#860202;
     --PersianIndigo:#340B61;
@@ -30,11 +32,33 @@ h1{
 
 nav p{
     color:white;
-    white-space:nowrap;
+    margin-right:5px;
+    padding-right:10px;
+    font-size: 25px;
+    flex-wrap: nowrap;
+    
 }
 
-footer{
-    margin-bottom:0;
+nav a{
+    text-decoration: none;
+    color:inherit;
+}
+
+.Footer {
+    background-color: var(--PersianIndigo);
+    color: white;
+    z-index: 1;
+    display: flex;
+    height: 6vh;
+    justify-content: center;
+}
+
+.Footer p {
+    text-align: center;
+    padding: 0 10px;
+}
+.Footer img {
+    height: 100%;
 }
 
 /* This centers the image, places it on a negative zindex, and adds a background */
@@ -55,7 +79,8 @@ nav {
     margin-left: -7px;
     left:0;
     z-index: 4;
-   
+    border-bottom: .6vh solid var(--Gold);
+    height: 8vh;
 }
 
 /* Specific Classes */
@@ -84,16 +109,60 @@ nav {
 }
 
 .AboutUs{
+    display:flex;
     margin-top: 5%;
     position: relative;
     padding-left: 20%;
     padding-right: 20%;
+    flex-direction: column;
+}
+
+.AboutUs > h1{
+    background-color: var(--Gold);
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    box-shadow: 0px -4px 0px 8px #b47b18;
+}
+
+.AboutUs > p{
+    background-color: var(--DarkRed);
+    box-shadow: 0px 4px 0px 8px rgb(90, 0, 0);
+    margin-top:0px;
+    padding-top:0px;
+    color: rgb(209, 209, 209);
+}
+
+#aboutbutton {
+    background-color: var(--Gold);
+    color: var(--PersianIndigo);
+    width: min-content;
+    white-space: nowrap;
+    font-size: 26px;
+    padding:5px;
+    border:3px solid black;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+#aboutbutton:hover{
+    background-color: #d1a04b;
+    color:#452566;
+
 }
 
 .Statistics{
     margin-top: 5%;
 }
 
+.stat-left {
+    background-color: var(--DarkRed);
+    color: rgb(209, 209, 209);
+    padding: 20px;
+}
+
+.stat-right {
+    background-color: var(--Gold);
+    padding: 20px;
+}
 
 /* Generic Classes */
 
@@ -111,11 +180,19 @@ nav {
     display:flex;
     justify-content: left;
     float:left;
+  
 }
+
+.flex-left img{
+    height:8vh;
+}
+
+
 
 .flex-right{
     display:flex;
     justify-content: right;
+    
 }
 
 .GoldHover:hover{
