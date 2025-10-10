@@ -28,6 +28,7 @@ body{
 
 h1{
     padding:10px;
+    font-size: 36px;
 }
 
 nav p{
@@ -39,7 +40,7 @@ nav p{
     
 }
 
-nav a{
+a {
     text-decoration: none;
     color:inherit;
 }
@@ -59,6 +60,11 @@ nav a{
 }
 .Footer img {
     height: 100%;
+}
+
+p {
+    font-size: 21px;
+    padding:8px;
 }
 
 /* This centers the image, places it on a negative zindex, and adds a background */
@@ -132,7 +138,7 @@ nav {
     color: rgb(209, 209, 209);
 }
 
-#aboutbutton {
+.button {
     background-color: var(--Gold);
     color: var(--PersianIndigo);
     width: min-content;
@@ -143,7 +149,7 @@ nav {
     transition: background-color 0.5s, color 0.5s;
 }
 
-#aboutbutton:hover{
+.button:hover{
     background-color: #d1a04b;
     color:#452566;
 
@@ -153,15 +159,27 @@ nav {
     margin-top: 5%;
 }
 
+.Statistics .button {
+    margin-left: 20%;
+}
+
+.Statistics img {
+    width: 100%;
+}
+
 .stat-left {
     background-color: var(--DarkRed);
     color: rgb(209, 209, 209);
     padding: 20px;
+    height: min-content;
+    margin-left: 20%
 }
 
 .stat-right {
     background-color: var(--Gold);
     padding: 20px;
+    width:50%;
+    margin-right:20%;
 }
 
 /* Generic Classes */
@@ -173,7 +191,7 @@ nav {
 .flex-between{
     display:flex;
     justify-content: center;
-    gap: 20%
+    gap: 5%
 }
 
 .flex-left{
