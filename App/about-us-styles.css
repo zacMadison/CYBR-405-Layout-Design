@@ -11,7 +11,7 @@ body {
 
 .mainGrid {
     display: grid;
-    grid-template-rows: 1fr 100vh 5vh;
+    grid-template-rows: 1fr 100% 5vh;
     flex-wrap: nowrap;
     position: absolute;
     background-color: #efefef;
@@ -101,13 +101,38 @@ nav .Right {
 }
 
 .mainContent {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: column;
     min-width: 75px;
     min-height: 50px;
     margin: 50px 100px;
-    gap: 100px;
-    height: 10vh;
+}
+
+.mainContent h1 {
+    color: var(--PersianIndigo);
+    text-align: center;
+    font-size: 40px;
+    margin: 0 0 10px 0;
+}
+
+.mainContent p {
+    margin: 10px 15%;
+    font-size: 20px;
+    text-indent: 2em;
+}
+
+#aboveImage {
+    margin-bottom: 30px;
+}
+
+.mainContent img {
+    width: 60%;
+    margin: 0 20%;
+    z-index: -1;
+}
+
+#belowImage {
+    margin-top: 30px;
 }
 
 
