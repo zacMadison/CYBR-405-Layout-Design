@@ -80,6 +80,11 @@ nav .Right {
     white-space: nowrap; /*Prevents text itself from wrapping*/
 }
 
+.Right a {
+    text-decoration: none;
+    color:inherit;
+}
+
 .GoldHover:hover{
     background-color: var(--Gold);
     color: var(--PersianIndigo) ;
