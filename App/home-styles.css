@@ -33,11 +33,10 @@ h1{
 
 nav p{
     color:white;
-    margin-right:5px;
-    padding-right:10px;
+    margin: 20px 5px;
+    padding: 5px 10px;
     font-size: 25px;
     flex-wrap: nowrap;
-    
 }
 
 a {
@@ -86,7 +85,7 @@ nav {
     left:0;
     z-index: 4;
     border-bottom: .6vh solid var(--Gold);
-    height: 8vh;
+    height: 5%;
 }
 
 /* Specific Classes */
@@ -210,7 +209,6 @@ nav {
 .flex-right{
     display:flex;
     justify-content: right;
-    
 }
 
 .GoldHover:hover{
